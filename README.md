@@ -13,5 +13,5 @@ node src/index.js
 
 ## To-do
 
-[] compare with similar NFTs from the same collection to benefit from mispricing
-[] buy directly from web3
+- [ ] compare with similar NFTs from the same collection to benefit from mispricing  
+- [ ] buy directly from web3
