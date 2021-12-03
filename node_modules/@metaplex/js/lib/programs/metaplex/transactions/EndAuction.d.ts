@@ -1,0 +1,23 @@
+import BN from 'bn.js';
+import { Borsh } from "../../../utils";
+import { ParamsWithStore } from "../../../types";
+import { PublicKey, TransactionCtorFields } from '@solana/web3.js';
+import { Transaction } from '../../../Transaction';
+export declare class EndAuctionArgs extends Borsh.Data<{
+    reveal: BN[] | null;
+}> {
+    static readonly SCHEMA: any;
+    instruction: number;
+    reveal: BN[] | null;
+}
+declare type EndAuctionParams = {
+    auction: PublicKey;
+    auctionExtended: PublicKey;
+    auctionManager: PublicKey;
+    auctionManagerAuthority: PublicKey;
+    reveal?: BN[];
+};
+export declare class EndAuction extends Transaction {
+    constructor(options: TransactionCtorFields, params: ParamsWithStore<EndAuctionParams>);
+}
+export {};
