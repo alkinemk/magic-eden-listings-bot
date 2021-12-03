@@ -6,7 +6,7 @@ Fetching listings to Magic Eden marketplace
 
 ## Installation 
 
-````bash
+```bash
 npm i
 node src/index.js
 ```
